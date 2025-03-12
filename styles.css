@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #444;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#buttonContainer {
+    margin: 20px 0;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn.active {
+    background-color: #0056b3;
+    border: 1px solid white;
+}
+
+/* Content and Textarea Styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+    width: 100%;
+    margin: 10px;
+    text-align: left;
+}
+
+/* Textarea Styles */
+textarea {
+    width: 70%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: both; /* Allow user to resize both horizontally and vertically */
+    font-size: 14px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+textarea.adjustable {
+    min-width: 300px;
+    min-height: 150px;
+    max-width: 100%;
+    max-height: 400px;
+}

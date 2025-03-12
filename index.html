@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Selection with Text Area</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Revenue Cycle Management (RCM) Task Filter System</h1>
+    <p>Select a category to display its text area:</p>
+
+    <!-- Button Container -->
+    <div id="buttonContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show All</button>
+        <button class="btn" onclick="filterSelection('SWO')">SWO Template</button>
+        <button class="btn" onclick="filterSelection('CMN')">CMN Template</button>
+        <button class="btn" onclick="filterSelection('First_Touch')">First Touch</button>
+ <button class="btn" onclick="filterSelection('Scheduling')">Scheduling</button>
+ <button class="btn" onclick="filterSelection('6MWT')">6MWT</button>
+
+ <button class="btn" onclick="filterSelection('Parachute_SWO/CMN')">Parachute SWO</button> 
+<button class="btn" onclick="filterSelection('Parachute_SWO/CMN_FU')">Parachute SWO Follow-up</button> 
+<button class="btn" onclick="filterSelection('POC_Availability')">POC Availability</button> 
+<button class="btn" onclick="filterSelection('Account_on_hold')">Account is on hold</button> 
+<button class="btn" onclick="filterSelection('Election')">Election Question/s</button>
+    </div>
+<button class="btn" onclick="filterSelection('K0738')">K0738</button>
+    </div>
+<button class="btn" onclick="filterSelection('RECERT')">RECERT / REQUAL / RELEASE TO BILL</button>
+    </div>
+
+
+<!-- Text Areas -->
+ <div class="content">
+    <div class="filterDiv SWO">
+        <textarea>
+IMPORTANT!
+
+The answer keys are located on the back of the sheet. We kindly request that the doctor accurately and completely fill out the form for insurance billing purposes on behalf of the patient, please ensure that the dates and signature should be in the same format. 
+
+Please have DOCTOR sign and fax it back to (484) 362-1480 at your earliest convenience.
+
+Feel free to call us at (484) 567-0666 if you have any questions. 
+Thank you for your prompt attention!
+
+----------------------------------------------------------
+From: Gabby M.
+Phone: (484) 567-0666 
+Fax: (484) 362-1480
+
+Phone: 4845670666 
+Fax: 4843621480
+        </textarea>
+    </div>
+
+
+
+
+        <div class="filterDiv CMN">
+     <textarea>
+IMPORTANT!
+
+The answer keys are located on the back of the sheet. We kindly request that the doctor accurately and completely fill out the form for insurance billing purposes on behalf of the patient, please ensure that the dates and signature should be in the same format. 
+
+Please have DOCTOR sign and fax it back to (484) 362-1480 at your earliest convenience.
+
+Feel free to call us at (484) 567-0666 if you have any questions. 
+Thank you for your prompt attention!
+
+----------------------------------------------------------
+From: Gabby M.
+Phone: (484) 567-0666 
+Fax: (484) 362-1480
+
+Phone: 4845670666 
+Fax: 4843621480
+            </textarea>
+        </div>
+
+
+ <div class="filterDiv First_Touch">
+            <textarea>
+What’s needed: 
+
+| Item/s: E1390 &
+| RUL Date: 
+
+| Doctor call: 0/5
+| GoScripts: 0/2
+| Parachute: 0/2
+| Patient Call: 0/3
+| Faxes sent: 0/5
+
+| Insurance: 
+| Policy Number: 
+| Checked Eligibility: Yes No
+| DNC/DNF: Yes No
+| GoScripts: Yes 
+| Parachute: Yes 
+
+| Doctor: 
+(PECOS)
+| NPI: 
+| Phone Number: 
+| Fax Number: 
+
+|Patient Evaluation/Test Date: 
+Patient Room air at rest: CODE%
+Patient Room air during exertion: CODE%
+Patient SpO2 while wearing 02 at 2LPM with exertion: CODE%
+| Diagnoses: 
+| Usage: 2LPM Oxygen via NC Continuous/Nocturnal
+| Can SWO be used: Yes No
+
+| Remark/s: We have valid testing, updated the clinical tab, and moved the testing to the OXRUL lists, but we cannot send the request for SWO/CMN until [DATE]. Flipped SB to Election pending Q.          </textarea>
+        </div>
+
+            <div class="filterDiv Scheduling">
+            <textarea>
+WHAT'S NEEDED: SCHEDULING/RESTART 
+| INSURANCE:  
+| RUL:
+| HCPC:
+| Comment/s: 
+Rcvd signed CMN by Dr. CODE. 
+New Sales Order - CODE.
+New Pickup Ticket - CODE. 
+SB flipped to Restart Scheduled. 
+PLEASE DO NOT SCHEDULE UNTIL THEN.
+            </textarea>
+        </div>
+
+
+        <div class="filterDiv 6MWT">
+            <textarea>
+Good day! Patient is due for 5-year O2 requalification. Requesting a copy of a qualifying 6-minute walk test from any year to be used in requalifying patient. For questions, you may call 484-567-0666. Thank you!
+            </textarea>
+        </div>
+
+
+        <div class="filterDiv 6MWT">
+            <textarea>
+Hello,
+
+We kindly request the 6MWT and vitals indicating SpO2 at 88% or below. These can be obtained from any recent appointments. Should you have any questions, feel free to reach out to us at (484) 567-0666. Thank you for your assistance!
+
+This patient’s insurance is requiring new oxygen saturations to be taken. In order to qualify for portable oxygen, there are 2 qualifying methods for testing:
+1. Room air at rest sat of 88% or below
+OR
+2. Three step exercise test, documenting the following 3 sats:
+A - O2 sat at rest without oxygen
+B – O2 sat at exertion (walking or other) without oxygen. (88% or below to qualify)
+C – O2 sat at exertion WITH the prescribed liter flow of O2.
+The results of this testing must be documented in the patient’s chart along with the reason the O2 was ordered, and a copy of these chart notes should be faxed to (484) 362-1480
+            </textarea>
+        </div>
+
+        <div class="filterDiv Parachute_SWO/CMN">
+            <textarea>
+Hello,  
+
+The patient is due for their 60-month Oxygen Restart. Kindly complete, sign, and date the attached CMN/SWO at your earliest convenience. If you have any questions, don’t hesitate to contact us at (484) 567-0666.  
+
+Thank you for your assistance!  
+            </textarea>
+        </div>
+
+        <div class="filterDiv Parachute_SWO/CMN_FU">
+            <textarea>
+Good day,  
+
+I’m following up on this order. We need the signed document to proceed with the patient’s 5-year Oxygen requalification. Thank you for your prompt attention, and have a wonderful day!
+            </textarea>
+        </div>
+
+        <div class="filterDiv POC_Availability">
+            <textarea>
+Subject: POC Availability
+ 
+Hello, Catherine!
+ 
+I hope this email finds you well. I am writing to inquire if you could assist a patient residing at [ADDRESS].
+ 
+This patient is due for a O2 5 YEAR RENEWAL, and we received a prescription for a POC for the patient and we would like to inquire if we have an available POC for this patient and I have attached the prescription.
+ 
+If additional details are needed, please let us know. Your prompt attention to this matter is greatly appreciated.
+ 
+Thank you and have a great day!
+            </textarea>
+        </div>
+
+
+
+        <div class="filterDiv Account_on_hold">
+            <textarea>
+Hello, Sabrina!
+
+I hope this email finds you well. I am writing to inquire if you could assist a patient residing at ADDRESS
+
+The patient is due for an O2 5 YEAR RENEWAL. The account is currently on hold, and it's unclear whether this is due to unresolved billing issues or another reason. We need confirmation on whether we can proceed with calling the patient to schedule a pick-up and exchange, or if the patient needs to settle the balance first. Please advise on the necessary steps to take.
+
+If additional details are needed, please let us know. Your prompt attention to this matter is greatly appreciated.
+
+Thank you and have a great day!
+
+Personal information:
+StLukes
+          </textarea>
+        </div>
+
+
+        <div class="filterDiv Account_on_hold">
+            <textarea>
+Hi! This is Raymond from AdaptHealth and its family of companies on a recorded line. 
+
+This message is for [Patient's name]
+
+We are reaching out to remind you that your account is due for a 5-year renewal and the good thing is that we have received all the documents that we need from your doctor.
+
+However, we can't proceed with the 5-year renewal because your account is on hold due to an outstanding balance that you need to settle first and the number for the billing department are Billing - [484] 398-6092 / [855] 389-4043.
+
+Once this is settled, please call us back at 484-567-0666. Thank you!           </textarea>
+        </div>
+
+        <div class="filterDiv Election">
+            <textarea>
+IMPORTANT QUESTIONS:
+
+1. Are you still using your oxygen therapy?
+[] Yes / [] No
+
+2. How often do you use your oxygen therapy?
+[] Continuous: I use my oxygen therapy continuously, 24 hours a day. 
+[] Nighttime Only: I use my oxygen therapy only at night while I sleep.
+[] Daytime Only: I use my oxygen therapy during the day, but not at night.
+
+3. What is the current liter flow setting on your oxygen equipment?
+
+4. Can you please confirm your address?
+
+----------------------
+Doctor's Information:
+
+5. Can you please provide the name of your pulmonologist or primary care physician?
+
+6. How about the phone number for your doctor's office?
+
+---------------------
+Doctor Appointments:
+
+7. When was your most recent appointment with your doctor regarding your oxygen?
+
+8. Do you have any upcoming appointments scheduled with your doctor?
+
+9. What is the physical address of your doctor's office?          </textarea>
+        </div>
+
+        <div class="filterDiv K0738">
+            <textarea readonly>
+These are the local branches that cannot provide Homefills anymore.
+ 
+Marshall Tx office
+AHS Plattsburgh
+Halprin Syracuse
+Halprin Binghamton
+Halprin Canandaigua
+TN Kingsport-61540
+TN Kingsport Resp-I-Care- 61544
+TN Johnson City-61542
+TN Knoxville
+TN Maryville
+TN Oakridge
+Adapt Health - Minnesota - United
+Goulds - Bardstown
+Goulds - Clarksville
+Goulds - Dutchmans
+KY Elizabethtown - 328
+KY Lexington - 103
+KY London - 330
+KY Louisville - 327
+KY Louisville Distribution Drive - 55528
+KY Murray - 55501
+KY Pikeville - 331
+KY Richmond - 329
+KY Somerset - 55507
+NY Rochester RSWNY - 53515
+RSWNY Cheektowaga           </textarea>
+        </div>
+
+
+
+
+
+       <div class="filterDiv RECERT">
+            <textarea>
+Please use this as a guide especially if you are confused with checking insurances:
+
+REQUAL 1 year NO payments
+RECERT 1 year or more, but not five years, with payments.
+RELEASE TO BILL if less than 1 year with payments for the new insurance.
+
+REQUAL:
+Stop reason: Requal/F2F/SWO Needed
+WIP State: Requalification in process
+Stop billing: None
+
+RECERT:
+Manual hold: Check and choose Recert SWO
+
+RELEASE TO BILL:
+Please consult the account to the Team leader before.
+
+----------------------------------------------------------
+RELEASE TO BILL FORMAT:
+Patient Name: 
+Patient ID: 
+DOB: 
+BT: 
+ 
+INSURANCE: 
+Started: DATE - with 3 payments
+           </textarea>
+        </div>
+
+        <div class="filterDiv 3">
+            <textarea>
+READ ONLY CODE            </textarea>
+        </div>
+
+        <div class="filterDiv 3">
+            <textarea>
+READ ONLY CODE            </textarea>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="filterDiv 3">
+            <textarea readonly>
+READ ONLY CODE            </textarea>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
