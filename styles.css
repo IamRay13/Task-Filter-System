@@ -16,11 +16,15 @@ h1 {
 p {
     font-size: 16px;
     margin: 10px 0;
+    color: #f9f9f9;
 }
 
 #buttonContainer {
     margin: 20px 0;
 }
+
+.filterDiv textarea {
+    color: white; /* Text color */
 
 /* Button Styles */
 .btn {
