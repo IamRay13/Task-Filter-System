@@ -45,24 +45,22 @@ p {
 
 /* Content and Textarea Styles */
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex; /* Ensures content is side by side */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Space between text areas */
     margin-top: 20px;
-    gap: 10px;
 }
 
 .filterDiv {
-    display: none; /* Hidden by default */
-    width: 100%;
-    margin: 10px;
+    display: block; /* Ensure the containers are visible */
+    width: auto; /* Allow them to size naturally */
     text-align: left;
 }
 
 /* Textarea Styles */
 textarea {
-    width: 70%;
-    height: 300px;
+    width: 400px; /* Set a fixed width for consistency */
+    height: 300px; /* Adjust height as needed */
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -70,13 +68,4 @@ textarea {
     font-size: 14px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-
-textarea.adjustable {
-    min-width: 300px;
-    min-height: 150px;
-    max-width: 100%;
-    max-height: 400px;
 }
