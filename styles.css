@@ -61,6 +61,7 @@ p {
 
 /* Textarea Styles */
 textarea {
+    
     width: 400px; /* Set a fixed width for consistency */
     height: 300px; /* Adjust height as needed */
     padding: 10px;
@@ -68,6 +69,7 @@ textarea {
     border-radius: 5px;
     resize: both; /* Allow user to resize both horizontally and vertically */
     font-size: 14px;
+    color: white;
     background-color: #00000080; /* Make textarea 50% transparent dark black */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
