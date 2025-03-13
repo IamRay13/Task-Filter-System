@@ -10,7 +10,7 @@ body {
 
 h1 {
     margin-top: 20px;
-    color: #444;
+    color: #white;
 }
 
 p {
@@ -26,7 +26,7 @@ p {
 .btn {
     padding: 10px 15px;
     margin: 5px;
-    background-color: #007BFF;
+    background-color: #00000080; /* Make textarea 50% transparent dark black */
     color: white;
     border: none;
     cursor: pointer;
@@ -35,11 +35,11 @@ p {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: ##0b0d0f;
 }
 
 .btn.active {
-    background-color: #0056b3;
+    background-color: #0b0d0f;
     border: 1px solid white;
 }
 
@@ -66,6 +66,6 @@ textarea {
     border-radius: 5px;
     resize: both; /* Allow user to resize both horizontally and vertically */
     font-size: 14px;
-    background-color: #f9f9f9;
+    background-color: #00000080; /* Make textarea 50% transparent dark black */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
